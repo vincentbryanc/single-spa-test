@@ -29,10 +29,10 @@ function pathPrefix(prefix) {
     }
 }
 
-/*registerApplication(
+registerApplication(
     'login', 
-    () => import('./src/login/login.app.js').then(module => module.navBar),
-    () => true
-);*/
+    () => import('./src/login/login.app.js'),
+    location => location.pathname === '/login'
+);
 
 start();
