@@ -1,0 +1,40 @@
+{
+  "name": "microfontend",
+  "version": "1.0.0",
+  "description": "test for microfrontend architecture",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "html-loader": "^1.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "angular": "^1.8.0",
+    "angular-ui-router": "^1.0.26",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1",
+    "single-spa": "^5.5.3",
+    "single-spa-angularjs": "^3.3.0",
+    "single-spa-react": "^3.0.0",
+    "single-spa-vue": "^1.8.2",
+    "systemjs-webpack-interop": "^2.1.1"
+  }
+}
