@@ -1,15 +1,19 @@
 import React from 'react'
 import {navigateToUrl} from 'single-spa'
 const NavBar = () => (
-  <nav>
-    <div className="nav-wrapper">
-      <a href="/" onClick={navigateToUrl} className="brand-logo">single-spa</a>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><a href="/" onClick={navigateToUrl}>Home</a></li>
-        <li><a href="/login" onClick={navigateToUrl}>Login</a></li>
-        <li><a href="/angularJS" onClick={navigateToUrl}>AngularJS</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div>
+    <nav>
+      <div className="nav-wrapper container">
+        <a href="/" onClick={navigateToUrl} className="brand-logo">CONX</a>
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <li><a href="/loan" onClick={navigateToUrl}>Loan</a></li>
+          <li><a href="/borrow" onClick={navigateToUrl}>Borrow</a></li>
+          <li><a href="/hire" onClick={navigateToUrl}>Hire</a></li>
+          <li><a>Hello [User]</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+  </div>
 )
 export default NavBar

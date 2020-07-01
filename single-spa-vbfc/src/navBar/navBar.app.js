@@ -5,6 +5,7 @@ import NavBar from './root.component.js';
 function domElementGetter() {
   return document.getElementById("navBar")
 }
+
 export const navBar = singleSpaReact({
   React,
   ReactDOM,

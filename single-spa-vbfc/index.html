@@ -1,9 +1,14 @@
 <html>
 <head>
     <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
         .fade-enter {
             opacity: 0;
             z-index: 1;
@@ -12,18 +17,29 @@
             opacity: 1;
             transition: opacity 250ms ease-in;
         }
+        main {
+            flex: 1 0 auto;
+        }
+        .page-footer {
+            padding-top: 0px !important;
+        }
     </style>
 </head>
 <body>
     <div id="navBar"></div>
     <div id="login"></div>
-    <div id="home"></div>
-    <div id="angularJS"></div>
+    <main>
+        <div id="loan"></div>
+        <div id="borrow"></div>
+        <div id="hire"></div>
+        <div id="admin"></div>
+    </main>
+    <div id="footer"></div>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- import the single-spa config file -->
     <script src="/dist/single-spa.config.js"></script>
 </body>
