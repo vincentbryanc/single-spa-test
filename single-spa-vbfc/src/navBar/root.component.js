@@ -6,10 +6,16 @@ const NavBar = () => (
       <div className="nav-wrapper container">
         <a href="/" onClick={navigateToUrl} className="brand-logo">CONX</a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><a href="/loan" onClick={navigateToUrl}>Loan</a></li>
-          <li><a href="/borrow" onClick={navigateToUrl}>Borrow</a></li>
-          <li><a href="/hire" onClick={navigateToUrl}>Hire</a></li>
-          <li><a>Hello [User]</a></li>
+          {(window.location.pathname !== "/admin") ? 
+            <>
+              <li><a href="/loan" onClick={navigateToUrl}>Loan</a></li>
+              <li><a href="/borrow" onClick={navigateToUrl}>Borrow</a></li>
+              <li><a href="/hire" onClick={navigateToUrl}>Hire</a></li>
+              <li><a>Hello [User]</a></li>
+            </>
+          : 
+            <li><a>Hello [Admin]</a></li>
+          }
         </ul>
       </div>
     </nav>
