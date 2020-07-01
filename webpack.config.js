@@ -28,6 +28,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'html-loader',
       },
+      {
+        test: /\.less$/,
+        loader: 'less-loader', // compiles Less to CSS
+      },
     ],
   },
   node: {
@@ -42,7 +46,7 @@ module.exports = {
   ],
   devtool: 'source-map',
   externals: [],
-  devServer: {
+  devServer: { 
     historyApiFallback: true
   }
 };
